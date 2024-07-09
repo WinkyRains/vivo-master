@@ -1,0 +1,636 @@
+/*顶部导航栏*/
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "vivo Light";
+    background-color: #fbf7f7;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+}
+/*主页顶部导航栏设计*/
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+    height: 15px;
+}
+nav .ul {
+    font-family: "vivo Light", serif;
+    list-style-type: none;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 0;
+
+}
+nav .ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 0.1em;
+}
+nav .ul li a {
+    color: rgba(154, 192, 190, 0.75);
+    text-decoration: none;
+    transition: color 0.5s ease;/*过渡动画*/
+}
+nav .ul li a:hover {
+    color: #fff;
+}
+nav #ul1 li{
+    float: left;
+}
+nav #ul2 li{
+    float: right;
+}
+nav #ul1{
+    margin-top: 0;
+    float: left;
+}
+nav #ul2{
+    margin-top: 0;
+    float: right;
+}
+
+nav .void{
+    color: #818181;
+}
+
+/*主页侧边栏*/
+.sidebar {
+    position: absolute;
+    width: 300px;
+    background-color: #fbf7f7;
+    float: left;
+    height: 440px;
+    top: 220px;
+    left: 100px;
+    opacity: 0.7;
+
+}
+.sidebar ul{
+    left: 0;
+    padding: 0;
+    margin-top: 0;
+}
+.sidebar ul li{
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    font-family: "vivo Light";
+    font-size: 25px;
+    text-align: center;
+    opacity: 1;
+
+     list-style-type: none;
+}
+.category:hover{
+    background-color: white;
+    opacity: 1;
+}
+
+.category {
+
+    opacity: 0.6;
+    height: 110px;
+}
+.category li{
+     list-style-type: none;
+}
+
+#divX {
+    display: none;
+    position: absolute;
+    height: 440px;
+    width: 800px;
+    float: left;
+    top:220px;
+    margin-top: 0;
+    left:400px;
+    background-color: #fbf7f7;
+
+}
+#divS {
+    display: none;
+    position: absolute;
+    height: 440px;
+    width: 800px;
+    float: left;
+    top:220px;
+    margin-top: 0;
+    left:400px;
+    background-color: #fbf7f7;
+}
+#divY {
+    display: none;
+    position: absolute;
+    height: 440px;
+    width: 800px;
+    float: left;
+    top:220px;
+    margin-top: 0;
+    left:400px;
+    background-color: #fbf7f7;
+}
+#divIQOO {
+    display: none;
+    position: absolute;
+    height: 440px;
+    width: 800px;
+    float: left;
+    top:220px;
+    margin-top: 0;
+    left:400px;
+    background-color: #fbf7f7;
+}
+.mm1{
+    float: left;
+    width: 200px;
+    height:200px;
+    margin-top: 20px;
+
+}
+.mm2{
+    float: left;
+    width: 200px;
+    height:200px;
+    margin-top: 20px;
+}
+.mm3{
+    float: left;
+    width: 200px;
+    height:200px;
+    margin-top: 20px;
+}
+.mm4{
+    float: left;
+    width: 200px;
+    height:200px;
+    margin-top: 20px;
+}
+#m1{
+    float: left;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+#m1:hover{
+    background-color: rgba(181, 229, 207, 0.69);
+    border-radius: 10px;
+    color: #7d7dcd;
+    transition: background-color 0.5s ease;/*过渡动画*/
+    transform: scale(1.05);
+
+}
+#m2:hover{
+    background-color: rgba(181, 229, 207, 0.69);
+    border-radius: 10px;
+    color: #7d7dcd;
+    transition: background-color 0.5s ease;/*过渡动画*/
+    transform: scale(1.05);
+}
+#m3:hover{
+    background-color: rgba(181, 229, 207, 0.69);
+    border-radius: 10px;
+    color: #7d7dcd;
+    transition: background-color 0.5s ease;/*过渡动画*/
+    transform: scale(1.05);
+}
+#m4:hover{
+    background-color: rgba(181, 229, 207, 0.69);
+    border-radius: 10px;
+    color: #7d7dcd;
+    transition: background-color 0.5s ease;/*过渡动画*/
+    transform: scale(1.05);
+}
+#m2{
+    width: 200px;
+    text-align: center;
+    float: left;
+    transition: transform 0.5s ease;
+}
+#m3{
+    width: 200px;
+    text-align: center;
+    float: left;
+    transition: transform 0.5s ease;
+}
+#m4{
+    width: 200px;
+    text-align: center;
+    float: left;
+    transition: transform 0.5s ease;
+}
+#pp1{
+    font-family: "vivo Light";
+    width: 200px;
+    left: 30px;
+    font-size: 25px;
+}
+#pp2{
+    font-family: "vivo Light";
+    width: 200px;
+    left: 30px;
+    font-size: 25px;
+}
+#pp3{
+    font-family: "vivo Light";
+    width: 200px;
+    left: 30px;
+    font-size: 25px;
+}
+#pp4{
+    font-family: "vivo Light";
+    width: 200px;
+    left: 30px;
+    font-size: 25px;
+}
+.look-more{
+    font-family: "vivo Light";
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    heiht: 440px;
+}
+
+
+.kook-more a:hover{
+     color: #415FFF;
+}
+.carousel {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    animation: showcontent 0.7s ease-in-out 0.05s 1 forwards;
+}
+.carousel img {
+    width: 100%;
+    height: 500px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.carousel-indicator {
+    width: 20px;
+    height: 5px;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.carousel-indicator.active {
+    background-color: #333;
+}
+.header1 {
+    background-color: #fbf7f7;
+    color: white;
+    padding-top: 1em;
+    margin: 0;
+    width: 100%;
+    height: 120px;
+    transition: height 1s ease; /* 添加过渡效果 */
+}
+.nav1{
+    width: 100%;
+    height: 120px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    transition: height 1s ease; /* 添加过渡效果 */
+}
+.nav1 .logo{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "vivo Light", serif;
+    width:18%;
+    height: 120px;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 0px;
+    animation: showcontent 0.5s ease-in-out 0.05s 1 forwards;
+    float: left;
+}
+.nav1 .classify{
+    width: 56%;
+    height: 120px;
+    float: left;
+    margin-top: 0px;
+    text-align: center;
+    animation: showcontent 0.5s ease-in-out 0.05s 1 forwards;
+
+}
+.nav1 .classify li{
+
+    font-family: "vivo Light";
+    animation: showcontent 0.5s ease-in-out 0.05s 1 forwards;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    display: inline;
+    padding-right: 40px;
+    margin-top: 60px;
+    transition: ease-in;
+
+}
+.nav1 .search{
+    font-size: 15px;
+    width: 18%;
+    height: 80px;
+    float:right;
+    margin-top: 40px;
+    text-align: center;
+    animation: showcontent 0.5s ease-in-out 0.05s 1 forwards;
+}
+.nav1 .search a{
+    text-align: center;
+}
+.nav1 .logo a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s ease;/*过渡动画*/
+}
+.nav1 .logo a:hover{
+    color: #415FFF;
+}
+.nav1 .classify a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s ease;/*过渡动画*/
+}
+.nav1 .classify a:hover{
+    color: #415FFF;
+}
+.flashing{
+    width: 20%;
+    height: 80px;
+    float: left;
+    padding-top: 10px;
+    animation: showcontent 0.5s ease-in-out 0.05s 1 forwards;
+}
+.flashing img{
+    width:176px;
+    height: 80px;
+}
+#time{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "vivo Light";
+    font-style: italic;
+    animation: showcontent 0.5s ease-in-out 0.05s 1 forwards;
+}
+.car{
+    width: 100%;
+    padding-top: 20px;
+    height: 350px;
+
+
+}
+.car1{
+    float: left;
+    background-color: white;
+    width:25%;
+    height:350px;
+    margin-left: 80px;
+}
+.car2{
+    float: left;
+    background-color: white;
+    width:25%;
+    height:350px;
+    margin-left: 20px;
+}
+.car3{
+    float: left;
+    background-color: white;
+    width:25%;
+    height:350px;
+    margin-left: 20px;
+}
+.car1:hover{
+    box-shadow: 0 0 10px #98989f;
+    transition: box-shadow 0.5s ease;
+}
+.car2:hover{
+    box-shadow: 0 0 10px #98989f;
+    transition: box-shadow 0.5s ease;
+}
+.car3:hover{
+    box-shadow: 0 0 10px #98989f;
+    transition: box-shadow 0.5s ease;
+}
+.itails{
+    width:2%;
+    height: 350px;
+    float: right;
+    background-color: #fbf7f7;
+    border-radius: 20px;
+}
+.itails:hover{
+    background-color: #cccccc;
+    transition: background-color 0.5s ease;/*过渡动画*/
+}
+.itails p{
+     font-family: "vivo Light";
+     font-size: 15px;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 100px;
+    color: #479c85;
+}
+.s1{
+    width: 200px;
+    height:200px;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.s2{
+    width: 200px;
+    height:200px;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.s3{
+    width: 200px;
+    height:200px;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.ss1{
+    margin-top: 0;
+    float: left;
+    width: 100px;
+    color: red;
+    font-size: 28px;
+    padding-left: 120px;
+}
+.oo1{
+   margin-top: 0;
+    width: 100px;
+    color: #927575;
+    font-size: 28px;
+    padding-left: 120px;
+    text-decoration: line-through;
+}
+.ss2{
+    margin-top: 0;
+    float: left;
+    width: 100px;
+    color: red;
+    font-size: 28px;
+    padding-left: 120px;
+}
+.oo2{
+    margin-top: 0;
+    width: 100px;
+    color: #927575;
+    font-size: 28px;
+    padding-left: 120px;
+    text-decoration: line-through;
+}
+.ss3{
+    margin-top: 0;
+    float: left;
+    width: 100px;
+    color: red;
+    font-size: 28px;
+    padding-left: 120px;
+}
+.oo3{
+    margin-top: 0;
+    width: 100px;
+    color: #927575;
+    font-size: 28px;
+    padding-left: 120px;
+    text-decoration: line-through;
+}
+.more-look{
+    text-decoration: none;
+    color: black;
+}
+.more-look:hover{
+    color: #27abf4;
+     transition: color 0.5s ease;/*过渡动画*/
+}
+.itails-look{
+    font-family: "vivo Light";
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    color: #479c85;
+    text-decoration: none;
+}
+.hot-post p{
+    margin-left: 600px;
+    font-family: "vivo Light";
+    font-size: 30px;
+    font-weight: bold;
+}
+.car1{
+    margin-top:10px;
+    float: left;
+    background-color: white;
+    width:20%;
+    height:280px;
+    margin-left: 20px;
+
+}
+.car1:hover{
+    box-shadow: 0 0 10px #98989f;
+    transition: box-shadow 0.5s ease;
+
+}
+.s1{
+    width: 200px;
+    height:200px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.all-x{
+    width:100%;
+    height:1000px;
+    padding-left:80px;
+    padding-top: 10px;
+}
+.n1{
+    text-align: center;
+    font-weight: bold;
+    font-family: "vivo Light";
+    font-size: 15px;
+}
+.xxx{
+    margin-left: 600px;
+    font-family: "vivo Light";
+    font-size: 30px;
+    font-weight: bold;
+}
+.car4{
+    float: left;
+    background-color: white;
+    width:25%;
+    height:350px;
+    margin-left: 80px;
+}
+.car4:hover{
+    box-shadow: 0 0 10px #98989f;
+    transition: box-shadow 0.5s ease;
+}
+.btn-left{
+    text-align: center;
+    position: absolute;
+    top:200px;
+    float:left;
+    width:20px;
+    height:100px;
+    background-color: #e8e9ed;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.btn-left:hover{
+    transition: background-color 0.5s ease;/*过渡动画*/
+    background-color: rgba(218, 228, 232, 0.35);
+}
+.btn-right{
+    position: absolute;
+    top:200px;
+    right:0;
+    float:right;
+    width:20px;
+    height:100px;
+    background-color: #e8e9ed;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.btn-right:hover{
+    transition: background-color 0.5s ease;/*过渡动画*/
+    background-color: rgba(218, 228, 232, 0.35);
+}
+
+
+
+@keyframes showcontent {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+        filter:blur(5px);
+    }to{
+         opacity: 1;
+         transform: translateY(0);
+         filter:blur(0);
+     }
+}

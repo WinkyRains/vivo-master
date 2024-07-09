@@ -1,0 +1,650 @@
+/*主页主体设计*/
+html, body {
+
+    width: 100%;
+    overflow-x: hidden;
+
+}
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "vivo Light";
+    background-color: #F0F2F5;
+
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+
+}
+/*主页顶部导航栏设计*/
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+    height: 15px;
+
+}
+nav .ul {
+    font-family: "vivo Light", serif;
+    list-style-type: none;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 0;
+
+}
+nav .ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 0.1em;
+}
+nav .ul li a {
+    color: rgba(154, 192, 190, 0.75);
+    text-decoration: none;
+    transition: color 0.5s ease;/*过渡动画*/
+}
+nav .ul li a:hover {
+    color: #fff;
+}
+nav #ul1 li{
+    float: left;
+}
+nav #ul2 li{
+    float: right;
+}
+nav #ul1{
+    margin-top: 0;
+    float: left;
+}
+nav #ul2{
+    margin-top: 0;
+    float: right;
+}
+
+nav .void{
+    color: #818181;
+}
+
+/*主页分类导航栏及下拉菜单设计*/
+.header1 {
+    background-color: #fbf7f7;
+    color: white;
+    padding-top: 1em;
+    margin: 0;
+    width: 100%;
+    height: 120px;
+    transition: height 1s ease; /* 添加过渡效果 */
+    animation: showcontent 0.5s ease-in-out 0.05s 1 forwards;
+}
+.nav1{
+    width: 100%;
+    height: 120px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    transition: height 1s ease; /* 添加过渡效果 */
+}
+.nav1 .logo{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "vivo Light", serif;
+    width:18%;
+    height: 120px;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 0px;
+
+    float: left;
+}
+.nav1 .classify{
+    width: 56%;
+    height: 120px;
+    float: left;
+    margin-top: 0px;
+    text-align: center;
+
+}
+.nav1 .classify li{
+    font-family: "Microsoft YaHei UI";
+
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    display: inline;
+    padding-right: 40px;
+    margin-top: 60px;
+}
+.nav1 .search{
+    font-size: 15px;
+    width: 18%;
+    height: 80px;
+    float:right;
+    margin-top: 40px;
+    text-align: center;
+}
+.nav1 .search a{
+    text-align: center;
+}
+.nav1 .logo a{
+     color: black;
+     text-decoration: none;
+     transition: color 0.5s ease;/*过渡动画*/
+}
+.nav1 .logo a:hover{
+     color: #415FFF;
+}
+.nav1 .classify a{
+     color: black;
+     text-decoration: none;
+     transition: color 0.5s ease;/*过渡动画*/
+}
+.nav1 .classify a:hover{
+    color: #415FFF;
+}
+
+.main1{
+    margin-top: 0;
+    float: left;
+    width: 100%;
+    height:800px;
+    border-radius: 10px;
+}
+
+.show1 {
+    width: 80%;
+    height: 600px;
+    margin-top: 690px;
+    margin-left: 155px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show1:hover {
+    transform: scale(1.05);
+}
+
+.show2 {
+    width: 80%;
+    height: 600px;
+    margin-top: 40px;
+    margin-left: 155px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show2:hover {
+    transform: scale(1.05);
+}
+
+.show3 {
+    width: 80%;
+    height: 600px;
+    margin-top: 40px;
+    margin-left: 155px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show3:hover {
+    transform: scale(1.05);
+}
+
+.show4 {
+    width: 25%;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 155px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show4:hover {
+    transform: scale(1.05);
+}
+
+.show5 {
+    width: 51%;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 57px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show5:hover {
+    transform: scale(1.05);
+}
+
+.show6 {
+    width: 80%;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 153px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show6:hover {
+    transform: scale(1.05);
+}
+
+.show7 {
+    width: 38%;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 155px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show7:hover {
+    transform: scale(1.05);
+}
+
+.show8 {
+    width: 39%;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 45px;
+    float: left;
+    transition: transform 0.6s ease;
+}
+
+.show8:hover {
+    transform: scale(1.05);
+}
+
+.play1 {
+    width: 100%;
+    height: 600px;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.play2 {
+    width: 100%;
+    height: 600px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.play3 {
+    width: 100%;
+    height: 600px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.play4 {
+    width: 100%;
+    height: 400px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.play5 {
+    width: 100%;
+    height: 400px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.play6 {
+    width: 100%;
+    height: 500px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.play7 {
+    width: 100%;
+    height: 400px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.play8 {
+    width: 100%;
+    height: 400px;
+    background-color: #fbf7f7;
+    margin-top: 0;
+    float: left;
+    border-radius: 30px;
+}
+
+.more {
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    margin-left: 155px;
+    float: left;
+    border-radius: 30px;
+}
+.more{
+     width: 100%;
+     height: 100px;
+     margin-top: 0;
+    margin-left: 155px;
+     float: left;
+     border-radius: 30px;
+}
+.more .p-more{
+    font-weight: bold;
+    font-size: 33px;
+    font-family: "vivo Light";
+}
+.box1{
+    width: 100%;
+    height: 500px;
+    margin-top: 0;
+    margin-left: 155px;
+    float: left;
+    border-radius: 30px;
+}
+.p-box1{
+    font-weight: bold;
+    font-size: 33px;
+    font-family: "vivo Light";
+}
+
+
+/*主页页脚设计*/
+.footer {
+
+    height:100px;
+    background-color: #333;
+    color: #818181;
+    text-align: center;
+
+    float: left;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.box {
+    left: 25%;
+    width: 600px;
+    height: 340px;
+    border: 1px #00FFFF solid;
+    position: relative;
+
+}
+
+.box div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(203, 215, 249);
+    text-align: center;
+    line-height: 100px;
+}
+
+.div2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.div3 {
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+
+.div4 {
+    position: absolute;
+    top: 10px;
+    left: 230px;
+}
+
+.div5 {
+    position: absolute;
+    top: 120px;
+    left: 230px;
+}
+
+.div6 {
+    position: absolute;
+    top: 230px;
+    left: 230px;
+}
+
+.div7 {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+}
+
+.div8 {
+    position: absolute;
+    top: 230px;
+    left: 10px;
+}
+
+.div9 {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    background-color: #d9f3e4;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    top: 120px;
+    left: 120px;
+}
+.div2 img{
+    width: 100px;
+    height: 100px;
+}
+.div3 img{
+    width: 100px;
+    height: 100px;
+}
+.div4 img{
+    width: 100px;
+    height: 100px;
+}
+.div5 img{
+    width: 100px;
+    height: 100px;
+}
+.div6 img{
+    width: 100px;
+    height: 100px;
+}
+.div9 img{
+    width: 100px;
+    height: 100px;
+}
+.div8 img{
+    width: 100px;
+    height: 100px;
+}
+
+
+._container {
+    margin-bottom: 0;
+    margin-left: 300px;
+    width: 300px;
+
+
+    list-style: none;
+    height: 320px;
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+    text-align: center;
+
+    padding: 0;
+}
+._container li {
+    margin-left: 15px;
+    height: 36px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+._container li:first-child {
+    margin-top: 0;
+    transition: margin-top .8s;
+}
+
+
+
+.container{
+
+    width:100%;
+    height:600px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #f5f5f5;
+    margin-top:150px;
+    box-shadow:0 0 30px 50px #dbdbdb;
+}
+#slide{
+    width:max-content;
+    margin-top:50px;
+}
+.item{
+    width:200px;
+    height:300px;
+    background-position: 50% 50%;
+    display:inline-block;
+    background-size: cover;
+    position:absolute;
+    top:50%;
+    margin-top:-150px;
+    /*transform: translateY(-50%);*/
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    transition: 0.5s;
+    animation: showcontent 0.7s ease-in-out 0.05s 1 forwards;
+}
+.item:nth-child(1),
+.item:nth-child(2){
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /*transform: translateY(0);*/
+    margin-top:0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.item:nth-child(3){
+    left:50%;
+}
+.item:nth-child(4){
+    left:calc(50% + 220px);
+}
+.item:nth-child(5){
+    left:calc(50% + 440px);
+}
+.item:nth-child(6){
+    left:calc(50% + 660px);
+    opacity:0;
+}
+.item .content{
+    width:300px;
+    position:absolute;
+    left:100px;
+    top:50%;
+    transform: translateY(-50%);
+    color:#eee;
+    font-family: "vivo Light";
+    display:none;
+}
+.item:nth-child(2) .content{
+    display:block;
+}
+.item .name{
+    color: rgba(69, 7, 7, 0.74);
+    font-size:40px;
+    font-weight:bold;
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+.item .des{
+    color: rgba(168, 200, 166, 0.81);
+    font-size: 15px;
+    margin:20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+}
+.item button{
+    padding:10px 20px;
+    border:none;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+.buttons{
+    width:100%;
+    position:absolute;
+    bottom:50px;
+    margin-left:-50px;
+    text-align: center;
+}
+.s_button{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    color:gray;
+    background-color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    font-weight:bold;
+    border:1px solid #555;
+    margin:0 25px;
+    transition: 0.5s;
+}
+.s_button:hover{
+    cursor:pointer;
+    background-color: #ccc;
+
+}
+@keyframes showcontent {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+        filter:blur(20px);
+    }to{
+         opacity: 1;
+         transform: translateY(0);
+         filter:blur(0);
+     }
+
+}
+#movingImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    z-index: 1000000000;
+}
+
