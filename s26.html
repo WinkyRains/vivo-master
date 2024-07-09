@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<script src="js/buy26.js"></script>
+<script>
+  function comp(btn){
+    var oDown = document.getElementById("btn-num1");
+    var oUp = document.getElementById("btn-num2");
+    var oNum = document.getElementById("num");
+    var Numx = parseInt(oNum.value);
+    if(btn === 'btn-num1' && Numx > 1){
+      Numx--;
+      console.log(Numx);
+    }else if(btn === 'btn-num2'){
+      Numx++;
+      console.log(Numx);
+    }
+    oNum.value = Numx;
+  }
+
+</script>
+<body>
+<header>
+  <!--    主页顶部导航栏-->
+  <nav>
+    <ul class="ul" id="ul1">
+      <li><a href="brand.html">品牌</a></li>
+      <li><a href="origin-system.html">originOS</a></li>
+      <li><a href="about.html">关于我们</a></li>
+      <li><a href="community.html">官网社区</a></li>
+    </ul>
+    <ul class="ul" id="ul2">
+      <li><a href="login.html">个人中心</a></li>
+      <li class="void">|</li>
+      <li><a href="shopping.html">购物车</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="header1" id="header1">
+
+  <!--分类导航栏及下拉菜单设计-->
+  <div class="nav1" id="nav1">
+    <div class="logo">
+      <a href="index.html">vivo</a>
+    </div>
+    <div class="classify" id="classify">
+      <ul id="classifyUl">
+        <li><a id="x" href="all.html">
+          X系列
+        </a>
+        </li>
+        <li>
+          <a id="s"  href="all.html#sss">
+            S系列
+          </a>
+        </li>
+        <li>
+          <a id="y"  href="all.html#yyy">
+            Y系列
+          </a>
+        </li>
+        <li>
+          <a id="iqoo"  href="all.html#iii">
+            IQOO手机
+          </a>
+        </li>
+        <li>
+          <a id="shopping" href="shopping-cart.html">
+            商城
+          </a>
+        </li>
+        <li>
+          <a id="serve" href="#">
+            售后咨询
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="search">
+      <a href="all.html">
+        <img id="searchImg" class="img" src="images/logo-icon/search2.png" height="40px" width="36px"/>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="show-p">
+  <img src="images/smart-phone-img/Y200i-1.png"/>
+</div>
+<div class="p-dsc">  <div class="p-name">
+  <p id="name-p" class="name-p">vivoy200i</p>
+</div>
+  <div class="p-price" >
+    <div class="line"></div>
+    <p class="price-p" id="price-p">￥ 1299</p>
+    <div class="line"></div>
+  </div>
+  <div class="version">
+    <p class="version-p">版本</p>
+    <div class="btn-ver">
+      <button id="btn-ver-1"  class="btn-ver-1">6GB+128GB</button>
+      <button id="btn-ver-2"  class="btn-ver-2">8GB+256GB</button>
+      <button id="btn-ver-3"  class="btn-ver-3">12GB+256GB</button>
+      <button id="btn-ver-4" class="btn-ver-4">16GB+512GB</button>
+    </div>
+  </div>
+  <div class="p-color">
+    <p class="color-p">颜色</p>
+    <div class="btn-clr">
+      <button id="btn-clr-1" onclick="buyc1()" class="btn-clr-1">星耀白</button>
+      <button id="btn-clr-2" onclick="buyc2()" class="btn-clr-2">烟雨青</button>
+      <button id="btn-clr-3" onclick="buyc3()" class="btn-clr-3">格斗黑</button>
+      <button id="btn-clr-4" onclick="buyc4()" class="btn-clr-4">晴山蓝</button>
+    </div>
+  </div>
+  <div class="p-package">
+    <p class="package-p">套餐</p>
+    <button class="btn-pac">官方标配</button>
+  </div>
+  <div class="user">
+    <p class="user-p">用户条款</p>
+    <input type="checkbox" class="user-check">
+    <p class="agree">我已阅读并同意</p><p class="ment">《vivo服务条款》</p>
+  </div>
+  <div class="p-number">
+    <p class="number-p">数量</p>
+    <div class="num-num">
+      <input class="btn-num1" type="button" value="-" id="btn-num1" onclick="comp('btn-num1')"/>
+      <input class= "number-input" type="text"  value="1"  id="num"/>
+      <input class="btn-num2"  type="button" value="+" id="btn-num2" onclick="comp('btn-num2')"/>
+    </div>
+
+  </div>
+  <div class="buy">
+    <button class="btn-buy" id="btn-buy" onclick="buy()">立即购买</button>
+  </div>
+</div>
+</body>
+</html>
